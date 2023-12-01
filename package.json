@@ -1,0 +1,129 @@
+{
+  "name": "social-network",
+  "version": "0.0.8",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc && vite build",
+    "coverage": "vitest run --coverage",
+    "dev": "vite --open",
+    "format": "npx prettier --write ./src",
+    "lint": "npx eslint src --ext .js,.jsx,.ts,.tsx",
+    "lint:fix": "eslint ./src --fix",
+    "prepare": "husky install",
+    "preview": "vite preview",
+    "commit": "git-cz",
+    "release": "standard-version",
+    "test": "vitest",
+    "test-ui": "vitest --ui"
+  },
+  "lint-staged": {
+    "*.(ts|tsx)": [
+      "npm run lint:fix",
+      "npm run format"
+    ]
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "jsx"
+    ],
+    "moduleNameMapper": {
+      "\\.(gif|ttf|eot|svg|png)$": "<rootDir>/test/__mocks__/fileMock.js",
+      "\\.(css|less|sass|scss)$": "identity-obj-proxy"
+    },
+    "testEnvironment": "jsdom",
+    "transform": {
+      "^.+\\.(js|jsx)$": "babel-jest"
+    },
+    "verbose": true
+  },
+  "engineStrict": true,
+  "engines": {
+    "node": "~18.16.1",
+    "npm": "please use yarn",
+    "yarn": "~1.22"
+  },
+  "dependencies": {
+    "@chakra-ui/alert": "^2.1.0",
+    "@chakra-ui/icons": "^2.0.19",
+    "@chakra-ui/react": "2.7.1",
+    "@chakra-ui/styled-system": "^2.9.0",
+    "@chakra-ui/system": "2.5.8",
+    "@emotion/react": "^11.11.0",
+    "@emotion/styled": "^11.11.0",
+    "@fontsource/open-sans": "^5.0.1",
+    "@jest/globals": "^29.5.0",
+    "@reduxjs/toolkit": "^1.9.5",
+    "@testing-library/dom": "^9.3.1",
+    "axios": "^1.4.0",
+    "buffer": "^6.0.3",
+    "commitizen": "^4.3.0",
+    "cors": "^2.8.5",
+    "date-fns": "^2.30.0",
+    "formik": "^2.4.2",
+    "framer-motion": "^10.12.17",
+    "history": "^5.3.0",
+    "jest": "^29.5.0",
+    "merge-anything": "^5.1.7",
+    "react": "^18.2.0",
+    "react-datepicker": "^4.14.1",
+    "react-dom": "^18.2.0",
+    "react-focus-lock": "^2.9.4",
+    "react-icons": "^4.10.1",
+    "react-paginate": "^8.2.0",
+    "react-redux": "^8.1.1",
+    "react-router": "^6.14.0",
+    "react-router-dom": "^6.14.0",
+    "react-text-mask": "^5.5.0",
+    "react-ymd-date-select": "^0.3.0",
+    "redux-mock-store": "^1.5.4",
+    "sass": "^1.63.6",
+    "standard-version": "^9.5.0",
+    "vite": "^4.3.9",
+    "yup": "^1.2.0"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "14.0.0",
+    "@testing-library/user-event": "14.4.3",
+    "@types/node": "^20.3.1",
+    "@types/react": "^18.2.14",
+    "@types/react-datepicker": "^4.11.2",
+    "@types/react-dom": "^18.2.6",
+    "@types/react-router-dom": "5.3.3",
+    "@types/redux-mock-store": "^1.0.3",
+    "@typescript-eslint/eslint-plugin": "^5.60.0",
+    "@typescript-eslint/parser": "^5.60.0",
+    "@vitejs/plugin-react": "^4.0.1",
+    "@vitest/coverage-c8": "^0.32.2",
+    "@vitest/coverage-v8": "^0.34.2",
+    "@vitest/ui": "^0.32.4",
+    "buffer": "^6.0.3",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "8.43.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-import-resolver-typescript": "^3.5.5",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "husky": "^8.0.3",
+    "jest-environment-jsdom": "^29.5.0",
+    "jsdom": "^22.1.0",
+    "lint-staged": "^13.2.2",
+    "msw": "^1.2.2",
+    "prettier": "^2.8.8",
+    "semantic-release": "^21.0.5",
+    "typescript": "^5.1.3",
+    "vite-plugin-eslint": "^1.8.1",
+    "vite-tsconfig-paths": "^4.2.0",
+    "vitest": "^0.32.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}

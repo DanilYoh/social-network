@@ -1,0 +1,35 @@
+.editField {
+  display: flex;
+  flex-direction: column;
+}
+.editInput {
+  padding: 0.5rem;
+  border: 0.1rem solid black;
+  border-radius: 0.5rem;
+}
+.editSpan {
+  color: red;
+}
+.editForm {
+}
+.editSubmit {
+  padding: 0.5rem;
+  background-color: #50f650;
+  border-radius: 0.4rem;
+}
+.editSelect {
+  border: 0.1rem solid black;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+.editCansel {
+  padding: 0.5rem;
+  background-color: #f65050;
+  border-radius: 0.4rem;
+  margin-left: 0.5rem;
+}
+.editTd {
+}
+.editTr {
+  position: relative;
+}

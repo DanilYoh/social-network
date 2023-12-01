@@ -1,0 +1,20 @@
+@media (min-width: 320px) {
+  .css-1g6jw32 {
+    width: 20px !important;
+    height: 25px !important;
+  }
+  .css-u9et5p {
+    width: 20px;
+    height: 25px;
+  }
+}
+@media (min-width: 650px) {
+  .css-1g6jw32 {
+    width: 30px !important;
+    height: 30px !important;
+  }
+  .css-u9et5p {
+    width: 30px;
+    height: 30px;
+  }
+}

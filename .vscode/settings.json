@@ -1,0 +1,21 @@
+{
+  "git.autofetch": true,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript][javascriptreact]": {
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": false
+  },
+  "cSpell.language": "en,ru",
+  "workbench.iconTheme": "material-icon-theme",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "scm.alwaysShowActions": true,
+  "editor.formatOnSave": true,
+  "cSpell.words": [
+    "chakra"
+  ],
+}
